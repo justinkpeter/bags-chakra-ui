@@ -26,8 +26,8 @@ export const Benefits = ({benefits}) => {
             mt={'26px'}
             spacing={'1.25rem'}
         >
-            { benefits.map((lenderBenefit) => {
-                return( <LenderBenefit benefit={ lenderBenefit } /> )
+            { benefits.map((lenderBenefit, index) => {
+                return( <LenderBenefit key={index} benefit={ lenderBenefit } /> )
             })}
         </VStack>
     )
